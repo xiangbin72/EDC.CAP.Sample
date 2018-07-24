@@ -21,7 +21,7 @@ This is a simple demo on the data consistency based on the open source project C
 > ASP.NET Core is one excellent technology which is better to implement micro-service in your project.
 
 The struecture of this demo is as below, there are 3 micro-services build on ASP.Net Core.
-[![N|CAP](http://images.cnblogs.com/cnblogs_com/edisonchou/1260867/o_CAP%20Demo.png)](https://github.com/dotnetcore/CAP/)
+[![N|CAP](https://github.com/EdisonChou/EDC.CAP.Demo/blob/master/doc/CAP%20Demo.png)](http://edisonchou.cnblogs.com)
 
 A simple business logic introduction:
 
