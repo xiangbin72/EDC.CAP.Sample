@@ -1,4 +1,5 @@
-﻿using Manulife.DNC.MSAD.WS.StorageService.Models;
+﻿using Manulife.DNC.MSAD.WS.Events;
+using Manulife.DNC.MSAD.WS.StorageService.Models;
 using Manulife.DNC.MSAD.WS.StorageService.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,7 +30,7 @@ namespace Manulife.DNC.MSAD.WS.StorageService
             services.AddDbContext<StorageDbContext>();
 
             // Dapper-ConnString
-            services.AddSingleton(Configuration["DB:CapDB"]);
+            services.AddSingleton(Configuration["DB:StorageDB"]);
 
             // Subscriber
             services.AddTransient<IOrderSubscriberService, OrderSubscriberService>();
@@ -39,15 +40,20 @@ namespace Manulife.DNC.MSAD.WS.StorageService
             {
                 x.UseEntityFramework<StorageDbContext>(); // EF
 
-                x.UseSqlServer(Configuration["DB:CapDB"]); // SQL Server
+                x.UseSqlServer(Configuration["DB:StorageDB"]); // SQL Server
 
                 x.UseRabbitMQ(cfg =>
                 {
                     cfg.HostName = Configuration["MQ:Host"];
+                    cfg.VirtualHost = Configuration["MQ:VirtualHost"];
                     cfg.Port = Convert.ToInt32(Configuration["MQ:Port"]);
                     cfg.UserName = Configuration["MQ:UserName"];
                     cfg.Password = Configuration["MQ:Password"];
                 }); // RabbitMQ
+
+                // Below settings is just for demo
+                x.FailedRetryCount = 2;
+                x.FailedRetryInterval = 5;
             });
 
             // Swagger

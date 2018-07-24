@@ -14109,11 +14109,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\DNC\\EDC.CAP.Demo\\Manulife.DNC.MSAD.WS.OrderService\\Manulife.DNC.MSAD.WS.OrderService.csproj",
+      "projectUniqueName": "E:\\Projects\\Git\\EDC.CAP.Demo\\src\\Manulife.DNC.MSAD.WS.OrderService\\Manulife.DNC.MSAD.WS.OrderService.csproj",
       "projectName": "Manulife.DNC.MSAD.WS.OrderService",
-      "projectPath": "E:\\Projects\\DNC\\EDC.CAP.Demo\\Manulife.DNC.MSAD.WS.OrderService\\Manulife.DNC.MSAD.WS.OrderService.csproj",
+      "projectPath": "E:\\Projects\\Git\\EDC.CAP.Demo\\src\\Manulife.DNC.MSAD.WS.OrderService\\Manulife.DNC.MSAD.WS.OrderService.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\DNC\\EDC.CAP.Demo\\Manulife.DNC.MSAD.WS.OrderService\\obj\\",
+      "outputPath": "E:\\Projects\\Git\\EDC.CAP.Demo\\src\\Manulife.DNC.MSAD.WS.OrderService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14132,11 +14132,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\Projects\\DNC\\EDC.CAP.Demo\\Manulife.DNC.MSAD.Common\\Manulife.DNC.MSAD.Common.csproj": {
-              "projectPath": "E:\\Projects\\DNC\\EDC.CAP.Demo\\Manulife.DNC.MSAD.Common\\Manulife.DNC.MSAD.Common.csproj"
+            "E:\\Projects\\Git\\EDC.CAP.Demo\\src\\Manulife.DNC.MSAD.Common\\Manulife.DNC.MSAD.Common.csproj": {
+              "projectPath": "E:\\Projects\\Git\\EDC.CAP.Demo\\src\\Manulife.DNC.MSAD.Common\\Manulife.DNC.MSAD.Common.csproj"
             },
-            "E:\\Projects\\DNC\\EDC.CAP.Demo\\Manulife.DNC.MSAD.WS.Events\\Manulife.DNC.MSAD.WS.Events.csproj": {
-              "projectPath": "E:\\Projects\\DNC\\EDC.CAP.Demo\\Manulife.DNC.MSAD.WS.Events\\Manulife.DNC.MSAD.WS.Events.csproj"
+            "E:\\Projects\\Git\\EDC.CAP.Demo\\src\\Manulife.DNC.MSAD.WS.Events\\Manulife.DNC.MSAD.WS.Events.csproj": {
+              "projectPath": "E:\\Projects\\Git\\EDC.CAP.Demo\\src\\Manulife.DNC.MSAD.WS.Events\\Manulife.DNC.MSAD.WS.Events.csproj"
             }
           }
         }

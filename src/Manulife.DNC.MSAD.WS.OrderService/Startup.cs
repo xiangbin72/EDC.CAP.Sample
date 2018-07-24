@@ -32,22 +32,29 @@ namespace Manulife.DNC.MSAD.WS.OrderService
             services.AddDbContext<OrderDbContext>();
 
             // Dapper-ConnString
-            services.AddSingleton(Configuration["DB:CapDB"]);
+            services.AddSingleton(Configuration["DB:OrderDB"]);
 
             // CAP
             services.AddCap(x =>
             {
                 x.UseEntityFramework<OrderDbContext>(); // EF
 
-                x.UseSqlServer(Configuration["DB:CapDB"]); // SQL Server
+                x.UseSqlServer(Configuration["DB:OrderDB"]); // SQL Server
 
                 x.UseRabbitMQ(cfg =>
                 {
                     cfg.HostName = Configuration["MQ:Host"];
+                    cfg.VirtualHost = Configuration["MQ:VirtualHost"];
                     cfg.Port = Convert.ToInt32(Configuration["MQ:Port"]);
                     cfg.UserName = Configuration["MQ:UserName"];
                     cfg.Password = Configuration["MQ:Password"]; 
                 }); // RabbitMQ
+
+                x.UseDashboard(); // Dashboard
+
+                // Below settings is just for demo
+                x.FailedRetryCount = 2;
+                x.FailedRetryInterval = 5;
             });
 
             // Swagger

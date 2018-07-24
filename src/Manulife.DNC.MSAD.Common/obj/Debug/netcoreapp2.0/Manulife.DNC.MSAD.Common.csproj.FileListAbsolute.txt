@@ -27,6 +27,7 @@ E:\Projects\DNC\EDC.MassTransit.OrderDemo\Manulife.DNC.MSAD.Common\obj\Debug\net
 E:\Projects\DNC\EDC.CAP.Demo\Manulife.DNC.MSAD.Common\bin\Debug\netcoreapp2.0\Manulife.DNC.MSAD.Common.deps.json
 E:\Projects\DNC\EDC.CAP.Demo\Manulife.DNC.MSAD.Common\bin\Debug\netcoreapp2.0\Manulife.DNC.MSAD.Common.dll
 E:\Projects\DNC\EDC.CAP.Demo\Manulife.DNC.MSAD.Common\bin\Debug\netcoreapp2.0\Manulife.DNC.MSAD.Common.pdb
+E:\Projects\DNC\EDC.CAP.Demo\Manulife.DNC.MSAD.Common\obj\Debug\netcoreapp2.0\Manulife.DNC.MSAD.Common.csprojAssemblyReference.cache
 E:\Projects\DNC\EDC.CAP.Demo\Manulife.DNC.MSAD.Common\obj\Debug\netcoreapp2.0\Manulife.DNC.MSAD.Common.csproj.CoreCompileInputs.cache
 E:\Projects\DNC\EDC.CAP.Demo\Manulife.DNC.MSAD.Common\obj\Debug\netcoreapp2.0\Manulife.DNC.MSAD.Common.AssemblyInfoInputs.cache
 E:\Projects\DNC\EDC.CAP.Demo\Manulife.DNC.MSAD.Common\obj\Debug\netcoreapp2.0\Manulife.DNC.MSAD.Common.AssemblyInfo.cs

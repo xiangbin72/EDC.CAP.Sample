@@ -1,5 +1,4 @@
-﻿using Manulife.DNC.MSAD.WS.Events;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace Manulife.DNC.MSAD.WS.Events
 {

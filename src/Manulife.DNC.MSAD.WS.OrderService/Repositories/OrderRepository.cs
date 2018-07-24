@@ -46,6 +46,7 @@ namespace Manulife.DNC.MSAD.WS.OrderService.Repositories
                     OrderItems = null,
                     ProductID = orderEntity.ProductID // For demo use
                 };
+                
                 await CapPublisher.PublishAsync(EventConstants.EVENT_NAME_CREATE_ORDER, orderMessage);
 
                 trans.Commit();

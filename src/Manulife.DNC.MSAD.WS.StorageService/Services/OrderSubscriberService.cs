@@ -14,18 +14,19 @@ namespace Manulife.DNC.MSAD.WS.StorageService.Services
         
         public OrderSubscriberService(string connStr)
         {
-            this._connStr = connStr;
+            _connStr = connStr;
         }
 
         [CapSubscribe(EventConstants.EVENT_NAME_CREATE_ORDER)]
         public async Task ConsumeOrderMessage(OrderMessage message)
         {
-            await Console.Out.WriteLineAsync($"Received message : {JsonHelper.SerializeObject(message)}");
+            await Console.Out.WriteLineAsync($"[StorageService] Received message : {JsonHelper.SerializeObject(message)}");
             await UpdateStorageNumberAsync(message);
         }
 
         private async Task<bool> UpdateStorageNumberAsync(OrderMessage order)
         {
+            //throw new Exception("test"); // just for demo use
             using (var conn = new SqlConnection(_connStr))
             {
                 string sqlCommand = @"UPDATE [dbo].[Storages] SET StorageNumber = StorageNumber - 1

@@ -14,19 +14,19 @@ namespace Manulife.DNC.MSAD.WS.DeliveryService.Services
 
         public OrderSubscriberService(string connStr)
         {
-            this._connStr = connStr;
+            _connStr = connStr;
         }
 
         [CapSubscribe(EventConstants.EVENT_NAME_CREATE_ORDER)]
         public async Task ConsumeOrderMessage(OrderMessage message)
         {
-            // TODO: Your business code
             await Console.Out.WriteLineAsync($"[DeliveryService] Received message : {JsonHelper.SerializeObject(message)}");
             await AddDeliveryRecordAsync(message);
         }
 
         private async Task<bool> AddDeliveryRecordAsync(OrderMessage order)
         {
+            //throw new Exception("test"); // just for demo use
             using (var conn = new SqlConnection(_connStr))
             {
                 string sqlCommand = @"INSERT INTO [dbo].[Deliveries] (DeliveryID, OrderID, ProductID, OrderUserID, CreatedTime)
