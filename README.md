@@ -3,8 +3,8 @@
 # About CAP
 [![N|CAP](https://camo.githubusercontent.com/452505edb71d41f2c1bd18907275b76291621e46/687474703a2f2f696d61676573323031352e636e626c6f67732e636f6d2f626c6f672f3235303431372f3230313730372f3235303431372d32303137303730353137353832373132382d313230333239313436392e706e67)](https://github.com/dotnetcore/CAP/)
 
-CAP is a library based on .Net standard, which is a solution to deal with distributed transactions, also has the function of EventBus, it is lightweight, easy to use, and efficiently.
-The author of CAP is savorboard, his blog is https://www.cnblogs.com/savorboard.
+CAP is a library based on .Net standard, which is a solution to deal with distributed transactions, also has the function of EventBus, it is lightweight, easy to use, and efficiently.<br/>
+The author of CAP is savorboard, his blog is https://www.cnblogs.com/savorboard.<br/>
 If you want to know more about CAP, please view this wiki: https://github.com/dotnetcore/CAP/wiki
 
 # About this Demo
@@ -16,8 +16,8 @@ This is a simple demo on the data consistency based on the open source project C
   - Dapper
   - CAP
 
-> The CAP supports both RabbitMQ and Kafka, we only need choose one of them for message queue.
-> The CAP supports MSQL, MySQL, MongoDB and so on. I choose MSSQL to show in this demo.
+> The CAP supports both RabbitMQ and Kafka, we only need choose one of them for message queue.<br/>
+> The CAP supports MSQL, MySQL, MongoDB and so on. I choose MSSQL to show in this demo.<br/>
 > ASP.NET Core is one excellent technology which is better to implement micro-service in your project.
 
 The struecture of this demo is as below, there are 3 micro-services build on ASP.Net Core.
