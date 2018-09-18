@@ -33,7 +33,6 @@ A simple business logic introduction:
 All above steps are finished without error, it is a final result for the eventual consistency of data. Of course, if any error happend in one step, CAP will help us to control the transaction to keep data consistency.
 
 ### Installation
-
 To use CAP, you need to install some packages as below.
 CAP base component is necessary.
 ```sh
@@ -47,6 +46,9 @@ MSSQL
 ```sh
 PM> Install-Package DotNetCore.CAP.SqlServer
 ```
+
+### References
+Find more : https://www.cnblogs.com/edisonchou/p/9363244.html
 
 
 
